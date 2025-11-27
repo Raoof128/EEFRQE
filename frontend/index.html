@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essential Eight + FAIR Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Essential Eight + FAIR Quantification</h1>
+      <p>ACSC-aligned maturity scoring with FAIR Monte Carlo estimates.</p>
+    </header>
+    <main>
+      <section id="maturity">
+        <h2>Essential Eight Maturity</h2>
+        <pre id="e8-output">Run the API to see results.</pre>
+      </section>
+      <section id="fair">
+        <h2>FAIR Loss Distribution</h2>
+        <canvas id="fairChart" width="400" height="200"></canvas>
+        <pre id="fair-output">Monte Carlo output will appear here.</pre>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
